@@ -1,1 +1,82 @@
-<p>register works!</p>
+<div
+  id="login"
+  class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600"
+>
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">
+      Code Intelligence Delivery
+    </h1>
+    <p class="text-gray-600 text-center mb-4">
+      Rellena todos los campos para poder registrarte en la aplicación.
+    </p>
+    <form>
+      <div class="mb-5">
+        <label class="block text-gray-700 font-medium mb-2">Nombre:</label>
+        <input
+          type="text"
+          name="firstName"
+          [(ngModel)]="user.first_name"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+          placeholder="Introduce tu nombre..."
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="block text-gray-700 font-medium mb-2">Apellidos:</label>
+        <input
+          type="text"
+          name="lastName"
+          [(ngModel)]="user.last_name"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+          placeholder="Introduce tus apellidos..."
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="block text-gray-700 font-medium mb-2"
+          >Correo electrónico:</label
+        >
+        <input
+          type="text"
+          name="mail"
+          [(ngModel)]="user.mail"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+          placeholder="Introduce tu correo electrónico..."
+        />
+      </div>
+      <div class="mb-5">
+        <label class="block text-gray-700 font-medium mb-2"
+          >Nombre de usuario:</label
+        >
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="user.username"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+          placeholder="Introduce tu correo electrónico..."
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="block text-gray-700 font-medium mb-2">Contraseña:</label>
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="user.password"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+          placeholder="Introduce tu contraseña..."
+        />
+      </div>
+      <button
+      (click)="register();"
+        type="submit"
+        class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+      >
+        Registarse
+      </button>
+      <div class="mt-5 text-blue-400">
+        <a>Iniciar Sesión</a>
+      </div>
+    </form>
+  </div>
+</div>

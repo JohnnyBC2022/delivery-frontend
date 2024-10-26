@@ -19,6 +19,6 @@ import { RegisterComponent } from './controller/register/register.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [RegisterComponent]
 })
 export class AppModule { }

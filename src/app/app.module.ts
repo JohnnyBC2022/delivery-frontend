@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './controller/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './controller/register/register.component';
+import { MenuComponent } from './controller/menu/menu.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { RegisterComponent } from './controller/register/register.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [RegisterComponent]
+  bootstrap: [MenuComponent]
 })
 export class AppModule { }

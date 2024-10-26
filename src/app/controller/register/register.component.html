@@ -68,14 +68,18 @@
         />
       </div>
       <button
-      (click)="register();"
+        (click)="register()"
         type="submit"
         class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
       >
         Registarse
       </button>
-      <div class="mt-5 ">
-        <a class="text-blue-500">Iniciar Sesión</a>
+      <div class="mt-5">
+        <a
+          class="text-blue-500 relative inline-block pb-1 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 hover:after:right-0"
+          routerLink="/api/login"
+          >Iniciar Sesión</a
+        >
       </div>
     </form>
   </div>
